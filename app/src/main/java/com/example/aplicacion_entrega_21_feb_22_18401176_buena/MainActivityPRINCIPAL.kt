@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.example.aplicacion_entrega_21_feb_22_18401176_buena.databinding.ActivityFullscreenBinding.inflate
+import com.example.aplicacion_entrega_21_feb_22_18401176_buena.ui.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_fullscreen.*
 import kotlinx.android.synthetic.main.activity_main_principal.*
 
@@ -26,12 +27,18 @@ class MainActivityPRINCIPAL : AppCompatActivity() {
             val lanzar =Intent(this, MapsActivity::class.java)
             startActivity(lanzar)
         }
+        val bout = findViewById<Button>(R.id.out)
+        bout.setOnClickListener{
+            val lanzar3 =Intent(this, LoginActivity::class.java)
+            startActivity(lanzar3)
+        }
 
         val bnota = findViewById<Button>(R.id.nota)
         bnota.setOnClickListener{
             val lanzar2 =Intent(this, FullscreenActivity::class.java)
             startActivity(lanzar2)
         }
+
     }
 
 

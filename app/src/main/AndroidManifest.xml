@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.aplicacion_entrega_21_feb_22_18401176_buena">
 
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -41,11 +43,7 @@
             android:exported="false"
             android:label="@string/title_activity_fullscreen"
             android:theme="@style/Theme.Aplicacion_Entrega_21_FEB_22_18401176_buena.Fullscreen" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:label="@string/title_activity_main"
-            android:theme="@style/Theme.Aplicacion_Entrega_21_FEB_22_18401176_buena.NoActionBar" />
+
         <activity
             android:name=".ui.login.LoginActivity"
             android:exported="true"
