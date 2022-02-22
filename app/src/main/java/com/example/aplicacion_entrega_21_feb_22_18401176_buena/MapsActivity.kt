@@ -50,6 +50,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val coordinates = LatLng(20.66116616201769, -105.21736197074591)
         val marker = MarkerOptions().position(coordinates).title("OFICIAL OFICE")
         map.addMarker(marker)
-        map.animateCamera(CameraUpdateFactory.newLatLngZoom(coordinates,18f),6000,null)
+        map.animateCamera(CameraUpdateFactory.newLatLngZoom(coordinates,18f),4000,null)
     }
 }
